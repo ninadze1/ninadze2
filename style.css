@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,700;1,400&display=swap');
+
+body{
+    margin: 0;
+    font-family: 'Arimo', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #fff;
+    color: #000;
+}
+
+/*  шапка  */
+header{
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.headerInner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img{
+    width: 15%;
+    height: auto;
+}
+
+nav{
+    width: 50%;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:#000;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+a:active{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/*  main  */
+.banner{
+    width: 100%;
+    background: url(images/BG1.jpg);
+    background-size: cover;
+    padding-top: 40vh;
+    padding-left: 30px;
+    padding-bottom: 10vh;
+    color: white; 
+}
+
+h1{
+    font-size: 36px;
+    margin: 0;
+}
+
+.pBanner{
+    margin-top: 10px;
+    margin-bottom: 60px;
+}
+
+.link{
+    display: inline-block;
+    background-color: rgba(34,34,34,0.3);
+    padding: 20px 40px;
+    color: aquamarine;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.link:hover{
+    color:rgb(248, 112, 0);
+    text-decoration: none;
+}
+
+.move{
+    width: 100wv;
+    height: 70vh;
+    background-color: white;
+    color:#000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie{
+    width: 100%;
+    height: 100vh;
+    background: url(images/BG2.jpeg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  подвал  */
+footer{
+    background-color: rgb(45, 46, 46);
+}
+
+.footerInner{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color:#fff;
+}
