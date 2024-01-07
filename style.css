@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,700;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Lobster&family=Press+Start+2P&family=Russo+One&display=swap');
 body{
     margin: 0;
-    font-family: 'Arimo', sans-serif;
+    font-family: 'Russo One', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    background-color: #fff;
+    background-color:white;
     color: #000;
 }
 
 /*  шапка  */
 header{
-    background-color: #fff;
+    background-color: #1cbeed;
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -24,7 +23,7 @@ header{
 
 .headerInner{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
@@ -34,6 +33,7 @@ img{
 }
 
 nav{
+    
     width: 50%;
 }
 
@@ -49,6 +49,9 @@ li{
 a{
     text-decoration: none;
     color:#000;
+    font-size: 20px;
+  
+
 }
 
 a:hover{
@@ -66,7 +69,7 @@ a:active{
     background: url(images/BG1.jpg);
     background-size: cover;
     padding-top: 40vh;
-    padding-left: 30px;
+    /* padding-left: 30px; */
     padding-bottom: 10vh;
     color: white; 
 }
@@ -79,19 +82,27 @@ h1{
 .pBanner{
     margin-top: 10px;
     margin-bottom: 60px;
+    font-size: 20px;
+    
 }
+.banner>*{
+    margin: 20px;
+}
+
+
 
 .link{
     display: inline-block;
-    background-color: rgba(34,34,34,0.3);
+    background-color: rgba(18, 19, 18, 0.3);
     padding: 20px 40px;
-    color: aquamarine;
+    color: white;
     font-size: 18px;
     font-weight: 700;
+    border-radius: 30px;
 }
 
 .link:hover{
-    color:rgb(248, 112, 0);
+    color:rgb(6, 0, 10);
     text-decoration: none;
 }
 
@@ -117,11 +128,92 @@ h1{
 
 /*  подвал  */
 footer{
-    background-color: rgb(45, 46, 46);
+    background-color: #ecae89;
+    
 }
 
 .footerInner{
     padding-top: 50px;
     padding-bottom: 50px;
-    color:#fff;
+    color:black;
+}
+
+
+/* планшеты горизонтально */
+@media (min-width: 992px) and (max-width: 1199px) {
+ 
+}
+
+/* планшеты вертикально */
+@media (min-width: 768px) and (max-width: 991px) {
+    a{
+        font-size:14px;
+    }
+    footer{
+        padding-left:20px;
+    }
+}
+
+/* телефоны горизонтально */
+@media (max-width: 767px) {
+
+   nav{
+    width: 70%;
+    
+   }
+
+   a{
+    font-size: 12px;
+   }
+
+    footer{
+        padding-left:20px;
+    }
+
+}
+
+/* телефоны вертикально */
+@media (max-width: 480px) {
+    nav{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .banner{
+        width: 100%;
+        background: url(images/BG1.jpg);
+        background-size: 150% auto;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        
+       
+    }
+    h1{
+        font-size: 16px;
+        margin: 0;
+    }
+    .container{
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .pBanner{
+        margin-top: 10px;
+       
+        font-size: 14px;
+        
+    }
+    .link{
+        display: inline-block;
+        background-color: rgba(18, 19, 18, 0.3);
+        
+        color: white;
+        font-size: 14px;
+        font-weight: 700;
+        border-radius: 30px;
+    }
+    .banner>*{
+        margin: 0;
+    }
 }
